@@ -1,0 +1,27 @@
+POST http://localhost:8080/send HTTP/1.1
+content-type: application/json
+#
+# data json to base64
+# {
+#    "from": "email@email.com",
+#    "to": [
+#        "email@email.com"
+#    ],
+#    "template": {
+#        "Subject": "send mail with template subject",
+#        "html": `content template.html`,
+#        "body": {
+#            "Name": "name",
+#            "Message": "name"
+#        }
+#    }
+# }
+#
+{
+    "message": {
+        "data": "ewogICAiZnJvbSI6ICJlbWFpbEBlbWFpbC5jb20iLAogICAidG8iOiBbCiAgICAgICAiZW1haWxAZW1haWwuY29tIgogICBdLAogICAidGVtcGxhdGUiOiB7CiAgICAgICAiU3ViamVjdCI6ICJzZW5kIG1haWwgd2l0aCB0ZW1wbGF0ZSBzdWJqZWN0IiwKICAgICAgICJodG1sIjogYGNvbnRlbnQgdGVtcGxhdGUuaHRtbGAsCiAgICAgICAiYm9keSI6IHsKICAgICAgICAgICAiTmFtZSI6ICJuYW1lIiwKICAgICAgICAgICAiTWVzc2FnZSI6ICJuYW1lIgogICAgICAgfQogICB9Cn0=",
+        "id": "PUB/SUB"
+    },
+    "subscription": "PUB/SUB"
+}
+
